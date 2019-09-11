@@ -111,7 +111,7 @@ header.addEventListener("click", event => {
 let nav = document.querySelector('nav');
 nav.addEventListener("click", event => {
   console.log(event.target);
-  nav.stopPropagation();
+  event.stopPropagation();
   alert('just nav');
   
 });
