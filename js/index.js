@@ -98,3 +98,20 @@ funBusNav.addEventListener('click', (e) => {
   console.log(`not so fast!`);
   e.preventDefault();
 });
+
+
+//stop probagation 
+
+let header = document.querySelector('header');
+header.addEventListener("click", event => {
+  console.log(event.target);
+  alert('just header');
+});
+
+let nav = document.querySelector('nav');
+nav.addEventListener("click", event => {
+  console.log(event.target);
+  nav.stopPropagation();
+  alert('just nav');
+  
+});
